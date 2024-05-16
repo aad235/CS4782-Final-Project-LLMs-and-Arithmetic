@@ -7,8 +7,20 @@ In the paper "Limitations of Language Models in Arithmetic and Symbolic Inductio
 </ul> 
 <h2 dir="ltr">3.2 Chosen Result</h2> 
 <ul dir="ltr"> 
-  <li>Identify the specific result you aimed to reproduce and its significance in the context of the paper’s main contribution(s).</li> 
-  <li>Include the relevant figure, table, or equation reference from the original paper.</li> 
+We aimed to reproduce the effectiveness of positional markers in enhancing the performance of language models, specifically the T5 model, in arithmetic addition tasks. This is significant as it aligns with the main contribution of the original paper, which demonstrated how methods like detailed computation steps, callable functions, and positional markers can improve model performance in symbolic manipulation tasks. Your work particularly focused on the impact of positional markers, showing that they slightly outperformed the baseline model, especially in in-distribution data. This aligns with the findings in the original study where similar enhancements were shown to improve accuracy.
+
+</ul>
+<p><strong>Author's Motivation</strong><p>
+<img width="300" alt="Screenshot 2024-05-15 at 11 36 29 PM" src="https://github.com/aad235/CS4782-Final-Project-LLMs-and-Arithmetic/assets/92837686/8d239b45-f046-4756-b8e1-eae98803aaa4">
+<p><strong>What We Will Focus On</strong><p>
+<img width="341" alt="Screenshot 2024-05-15 at 11 49 25 PM" src="https://github.com/aad235/CS4782-Final-Project-LLMs-and-Arithmetic/assets/92837686/4d9dab3a-de0f-42b7-8e8e-10a3c9c5629d">
+
+
+<p><strong>What The Paper Accomplished</strong> </p>
+<img width="314" alt="Screenshot 2024-05-15 at 11 38 42 PM" src="https://github.com/aad235/CS4782-Final-Project-LLMs-and-Arithmetic/assets/92837686/a657d0a4-32ec-41c6-95e8-9fbb4c0d6744">
+
+
+  
 </ul> 
 <h2 dir="ltr">3.3 Re-implementation Details</h2> 
 <ul dir="ltr"> 
