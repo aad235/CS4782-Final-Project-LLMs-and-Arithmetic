@@ -102,7 +102,8 @@ The model with Positional Markers slightly outperform baseline model.
 </ul> 
 <h2 dir="ltr">3.5 Conclusion and Future Work</h2> 
 <ul dir="ltr"> 
-  <li>Summarize the key takeaways from your re-implementation effort and the lessons learned.</li> 
+  <li>
+Large Language Models face challenges in performing arithmetic tasks. Both the paper's work and our data suggest that methods to tutor or nudge the LLM can aid in learning these tasks. The results demonstrate that positional embedding significantly outperforms the baseline in addition tasks. This finding indicates that simply having the language model learn math through presenting the problem and then the solution is not effective. Introducing positional embedding to track the location of each digit had a significant impact on the model's performance. While we did not replicate the authors' results of 100% accuracy within the in-distribution dataset, we did observe the general trend of improved model accuracy. Specifically, the use of positional markers significantly outperformed the baseline model. One reason for the discrepancy in results is that we did not use the exact same hyperparameters, such as seed or maximum length limit, as the authors. Additionally, we did not have access to their dataset and had to create our own. The biggest lesson learned is the importance of de-abstracting tasks that LLMs struggle with. In this case, it was addition. Similar to how it is important to lay out the steps of performing arithmetic or math to a student, a similar strategy can be employed and proven effective with LLMs</li> 
   <li>Discuss potential future directions or extensions based on your findings and the paper’s implications.</li> 
 </ul> 
 <h2 dir="ltr">3.6 References</h2> 
