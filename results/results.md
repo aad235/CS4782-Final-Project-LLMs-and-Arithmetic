@@ -11,3 +11,14 @@
 <ul dir="ltr"> 
 <img src="baselineResults.png" alt="Baseline Accuracy for Numbers up to 30 Digits Long">
 </ul> 
+
+<h2 dir="ltr">Baseline Results</h2> 
+<ul dir="ltr"> 
+<img src="labelLoss.png" alt="Positional Accuracy for Numbers up to 30 Digits Long">
+</ul> 
+
+
+<h2 dir="ltr">Baseline Results</h2> 
+<ul dir="ltr"> 
+<img src="labelResult.png" alt="Positional Accuracy for Numbers up to 30 Digits Long">
+</ul> 
