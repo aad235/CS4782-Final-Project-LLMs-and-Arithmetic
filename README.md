@@ -2,9 +2,8 @@
 
 <h2 dir="ltr">3.1 Introduction</h2> 
 <ul dir="ltr"> 
-  <li>Provide a brief introduction to your project, including the chosen paper’s title, authors, and publication venue.</li> 
-  <li>A brief description of the main method.</li> 
-  <li>Explain the main contribution(s) of the paper.</li> 
+In the paper "Limitations of Language Models in Arithmetic and Symbolic Induction," Jing Qian, Hong Wang, Zekun Li, Shiyang Li, and Xifeng Yan from the University of California, Santa Barbara, examine how large pretrained language models like GPT-3 and T5 handle arithmetic and symbolic reasoning tasks, with a particular focus on addition. The research highlights that despite their strong performance, these models face difficulties with complex arithmetic that includes longer digits and repeated numbers. Despite various efforts, such as fine-tuning and the use of detailed computation steps and positional markers, these models still struggle with out-of-distribution data and repeating digits. A key contribution of this study is the introduction of the "LMs with tutor" method, which meticulously guides the models through each computational step, similar to operations in multiple tape Turing machines. This method significantly improves the models' accuracy with out-of-distribution scenarios and repeated symbols, paving the way for future enhancements in symbolic manipulation tasks. Our project successfully trained the T5 and T5 random model to achieve addition results consistent with those in the paper. We initially tried enhancing the model with positional embeddings and later incorporated random positional embeddings for training up to 5 digits. This led to improvements with random positional embeddings for training up to 5 digits, though the out-of-distribution accuracy remains low.
+  
 </ul> 
 <h2 dir="ltr">3.2 Chosen Result</h2> 
 <ul dir="ltr"> 
