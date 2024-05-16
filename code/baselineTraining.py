@@ -36,6 +36,17 @@ tokenized_eval = eval_dataset_hf.map(preprocess_function, batched=True, num_proc
 
 #Define model
 
+"""
+If there is already a pretrained model load it in from google drive. 
+
+#Grab model from google drive
+model_path = 'model location'
+model = T5ForConditionalGeneration.from_pretrained(model_path)
+tokenizer = T5Tokenizer.from_pretrained(model_path)
+
+
+"""
+
 model = T5ForConditionalGeneration.from_pretrained("t5-small")
 # Set up training arguments
 training_args = TrainingArguments(
@@ -55,6 +66,20 @@ trainer = Trainer(
     eval_dataset=tokenized_eval  # Use the tokenized evaluation dataset
 )
 
-#Train and save the model
+#Train and save the model locally
 trainer.train()
 trainer.save_model('./results/final_model')
+
+#optinally save the model to google drive (we did this in colab so this is how we saved)
+
+"""
+from google.colab import drive
+drive.mount('/content/drive')
+
+# Specify the path inside Google Drive
+output_dir = '/content/drive/My Drive/my_local_model200Epochs'
+
+# Save the model and tokenizer to google drive
+trained_model.save_pretrained(output_dir)
+trained_tokenizer.save_pretrained(output_dir)
+"""
