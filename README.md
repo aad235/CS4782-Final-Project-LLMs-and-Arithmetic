@@ -24,12 +24,59 @@ We aimed to reproduce the effectiveness of positional markers in enhancing the p
 </ul> 
 <h2 dir="ltr">3.3 Re-implementation Details</h2> 
 <ul dir="ltr"> 
-  <li>Describe your re-implementation approach, including the model architec- ture, datasets, evaluation metrics, and any modifications made to the
-    <ul dir="ltr"> 
-      <li>riginal methodology.</li> 
-    </ul></li> 
-  <li>Provide instructions for running your code, including any dependencies, required libraries, and command-line arguments.</li> 
-  <li>Specify the computational resources (e.g., GPU) needed to reproduce your results.</li> 
+  <li>To reimplement the authors' paper, we needed to create a dataset and fine-tune a large language model (LLM). We chose to replicate the addition with positional markers result and decided to fine-tune the T5 small model because it was the smallest and required less computational power. Since the T5 model is not trained for addition, we introduced a special "add" token. Additionally, we had to create a baseline dataset, as the base T5 model cannot perform addition.
+
+To create both datasets—the baseline and the positional markers baseline—we developed a function that takes in the digits (k), alpha value, and the number of samples. This function returns datasets distributed up to k digits with the specified number of samples. As presented by the authors of the paper, k, alpha, and in/out of distribution refer to the following:
+
+"In-distribution refers to training on up to k-digit numbers and testing on up to k-digit numbers, while out-of-distribution refers to training on up to k-digit numbers and testing on numbers with more digits. α indicates the repetition level of the examples. An example x1 · · · xn with n digits is sampled with the next digit probability p(xi+1|xi) = α, when xi+1 = xi; otherwise, (1 − α)/9. Larger α indicates a higher repetition level."
+
+The data then had to be formatted correctly to pass into the T5 model. This involved prefixing with the special "add" token, splitting the data into test, validation, and training sets, converting the data into a dataset object, and tokenizing it. The next step was to import the T5 model from the transformers library, along with the trainer. The training parameters specified by the paper included a learning rate of 5e-5, a batch size of 16, and 200 training epochs. We set the maximum generation length to 512 but decided to reduce it, as 512 seemed too long. Checkpoints were evaluated every 1000 optimization steps.
+
+Once the setup was complete, the model was trained and saved to Google Drive or locally. To evaluate the model, we needed to assess both the baseline and positional markers performance. We created a dataset class of addition problems up to 30 digits long, with each class consisting of 100 randomly generated addition problems. These were then evaluated on the models and graphed. We chose 30 digits because that is what the authors of the paper used. The first 5 digits represent the in-distribution data, and 6-30 represent the out-of-distribution data.</li> 
+    <p><strong>Required Libraries:</strong></p>
+    <ul>
+        <li>transformers</li>
+        <li>tensorflow</li>
+        <li>sklearn</li>
+        <li>torch</li>
+        <li>random</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ol>
+    <li>
+        <strong>Create the Baseline and Positional Markers Dataset:</strong>
+        <ul>
+            <li>The necessary files are located in the <code>/data</code> directory.</li>
+            <li>Adjust the <code>k</code>, <code>alpha</code>, and sample size parameters as needed.</li>
+            <li>Note where the model will be saved. We saved it to Google Drive, but it can also be saved locally.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Train the Models:</strong>
+        <ul>
+            <li>Training instructions and files are available in the <code>/code</code> directory.</li>
+            <li>Specify the dataset file path before training the model.</li>
+            <li>After specifying the file path, you can train the model.</li>
+            <li>Again, specify where to save the model. This can be done either locally or to Google Drive.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Examine the Results:</strong>
+        <ul>
+            <li>Files for examining the results are also found in the <code>/code</code> directory.</li>
+            <li>The files labeled <code>generatePlot</code> will create addition examples for both in-distribution and out-of-distribution data.</li>
+            <li>You can specify the number of digits and the number of problems per digit class.</li>
+            <li>Ensure you specify the model name and its location.</li>
+        </ul>
+    </li>
+    </ol>
+
+    
+
+  <p><strong>Computation Requirements:</strong></p>
+  <ul>
+    <li>T4 GPU 6 hours of training</li>
+  </ul>
 </ul> 
 <h2 dir="ltr">3.4 Results and Analysis</h2> 
 <ul dir="ltr"> 
