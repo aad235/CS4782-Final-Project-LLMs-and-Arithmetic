@@ -80,10 +80,25 @@ Once the setup was complete, the model was trained and saved to Google Drive or 
 </ul> 
 <h2 dir="ltr">3.4 Results and Analysis</h2> 
 <ul dir="ltr"> 
-  <li>Present your re-implementation results and compare them to the original paper’s findings.</li> 
-  <li>Discuss any discrepancies or challenges encountered during the re-implementation process. If there is discrepancy between your results and the reported results, present a clear discussion of your hypotheses explaining the dis- crepancy.</li> 
-  <li>Provide an analysis of your results in the context of the paper’s main contribution(s) and the broader research area.</li> 
-  <li>Note: We are looking for a reasonable re-implementation of the method and a clear discussion of your results. A failure to match the reported results could happen for any number of reasons that would not negatively impact your grade. It is acceptable, for instance, to run smaller-scale experiments if you initially under-estimated the required resources for your selected result. It’s also possible that the authors left out some detail that is necessary to match their performance.</li> 
+  Our result performs well up to 3 digits (~50% accuracy) and we have trained on 200 epochs for each model (T5 and T5 random)
+</ul>
+<p></p>
+<p dir="ltr"><strong>Result with regular baseline (Accuracy vs Class)</strong></p>
+<div style="display: flex; justify-content: space-between;">
+  <img width="508" alt="Screenshot 2024-05-16 at 12 16 16 AM" src="https://github.com/aad235/CS4782-Final-Project-LLMs-and-Arithmetic/assets/92837686/91fbc6b3-87c9-4e7a-8c1f-8877af666470">
+</ul>
+
+  <img width="494" alt="Screenshot 2024-05-16 at 12 16 54 AM" src="https://github.com/aad235/CS4782-Final-Project-LLMs-and-Arithmetic/assets/92837686/a948bfe4-70d3-4f68-994f-399198284377">
+</div>
+<p></p>
+<p dir="ltr"><strong>Results with Positional Variable (Accuracy vs Class)</strong></p>
+<div style="display: flex; justify-content: space-between;">
+  <img width="508" alt="Screenshot 2024-05-16 at 12 17 27 AM" src="https://github.com/aad235/CS4782-Final-Project-LLMs-and-Arithmetic/assets/92837686/e57a0928-e989-4154-a59f-62ea68e6ba59">
+  <img width="494" alt="Screenshot 2024-05-16 at 12 16 54 AM" src="https://github.com/aad235/CS4782-Final-Project-LLMs-and-Arithmetic/assets/92837686/a948bfe4-70d3-4f68-994f-399198284377">
+</div>
+  
+The model with Positional Markers slightly outperform baseline model. 
+
 </ul> 
 <h2 dir="ltr">3.5 Conclusion and Future Work</h2> 
 <ul dir="ltr"> 
