@@ -13,8 +13,9 @@ We aimed to reproduce the effectiveness of positional markers in enhancing the p
 <p><strong>Author's Motivation</strong><p>
 <img width="300" alt="Screenshot 2024-05-15 at 11 36 29 PM" src="https://github.com/aad235/CS4782-Final-Project-LLMs-and-Arithmetic/assets/92837686/8d239b45-f046-4756-b8e1-eae98803aaa4">
 <p><strong>What We Will Focus On</strong><p>
-<img width="341" alt="Screenshot 2024-05-15 at 11 49 25 PM" src="https://github.com/aad235/CS4782-Final-Project-LLMs-and-Arithmetic/assets/92837686/4d9dab3a-de0f-42b7-8e8e-10a3c9c5629d">
+<img width="341" alt="Screenshot 2024-05-15 at 11 49 25 PM" src="https://github.com/aad235/CS4782-Final-Project-LLMs-and-Arithmetic/assets/92837686/4d9dab3a-de0f-42b7-8e8e-10a3c9c5629d">\\
 
+<img width="341" alt="Screenshot 2024-05-15 at 11 49 25 PM" src="https://github.com/aad235/CS4782-Final-Project-LLMs-and-Arithmetic/assets/160791873/9d8b80b9-3d10-4c5f-8505-544bcf9ae64b">
 
 <p><strong>What The Paper Accomplished</strong> </p>
 <img width="314" alt="Screenshot 2024-05-15 at 11 38 42 PM" src="https://github.com/aad235/CS4782-Final-Project-LLMs-and-Arithmetic/assets/92837686/a657d0a4-32ec-41c6-95e8-9fbb4c0d6744">
