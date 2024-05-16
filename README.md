@@ -100,6 +100,8 @@ Once the setup was complete, the model was trained and saved to Google Drive or 
   
 The model with Positional Markers slightly outperform baseline model. 
 
+The randomization of the Labels did not improve the Labels solution but rather significantly declined the performance on all digits.  Furthermore, the loss functions grew significantly in comparison to both, the baseline and the labels models.
+
 </ul> 
 <h2 dir="ltr">3.5 Conclusion and Future Work</h2> 
 <ul dir="ltr"> 
