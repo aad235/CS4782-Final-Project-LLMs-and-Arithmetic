@@ -7,7 +7,7 @@ In the paper "Limitations of Language Models in Arithmetic and Symbolic Inductio
 </ul> 
 <h2 dir="ltr">3.2 Chosen Result</h2> 
 <ul dir="ltr"> 
-We aimed to reproduce the effectiveness of positional markers in enhancing the performance of language models, specifically the T5 model, in arithmetic addition tasks. This is significant as it aligns with the main contribution of the original paper, which demonstrated how methods like detailed computation steps, callable functions, and positional markers can improve model performance in symbolic manipulation tasks. Your work particularly focused on the impact of positional markers, showing that they slightly outperformed the baseline model, especially in in-distribution data. This aligns with the findings in the original study where similar enhancements were shown to improve accuracy.
+We aimed to reproduce the effectiveness of positional markers in enhancing the performance of language models, specifically the T5 model, in arithmetic addition tasks. This is significant as it aligns with the main contribution of the original paper, which demonstrated how methods like detailed computation steps, callable functions, and positional markers can improve model performance in symbolic manipulation tasks. Our work particularly focused on the impact of positional markers, showing that they slightly outperformed the baseline model, especially in in-distribution data. This aligns with the findings in the original study where similar enhancements were shown to improve accuracy.
 
 </ul>
 <p><strong>Author's Motivation</strong><p>
