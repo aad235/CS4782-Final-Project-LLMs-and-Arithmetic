@@ -93,12 +93,10 @@ Once the setup was complete, the model was trained and saved to Google Drive or 
 </div>
 <p></p>
 <p dir="ltr"><strong>Results with Positional Variable (Accuracy vs Class)</strong></p>
+
+
 ![Label Result](results/labelResult.png)
 
-
-  <img width="494" alt="Screenshot 2024-05-16 at 12 16 54 AM" src="https://github.com/aad235/CS4782-Final-Project-LLMs-and-Arithmetic/assets/92837686/a948bfe4-70d3-4f68-994f-399198284377">
-</div>
-<p></p>
 
 
 
