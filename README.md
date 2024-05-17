@@ -100,8 +100,11 @@ Once the setup was complete, the model was trained and saved to Google Drive or 
   <img width="494" alt="Screenshot 2024-05-16 at 12 16 54 AM" src="https://github.com/aad235/CS4782-Final-Project-LLMs-and-Arithmetic/assets/92837686/a948bfe4-70d3-4f68-994f-399198284377">
 </div>
 <p></p>
-  
-The model with Positional Markers slightly outperform baseline model. 
+
+![Label Result](results/labelResult.png)
+
+
+The model with Positional Markers significanlty outperform baseline model. 
 
 The randomization of the labels did not improve performance over the labels solution but rather significantly declined performance across all digits. Furthermore, the loss functions grew significantly in comparison to both the baseline and the labels models. One possible explanation was a more complex pattern for the model to learn, as every positional marker was being updated with a new iteration. Possible fixes would include increasing the number of data points for training; however, the paper's model was limited to 10,000 examples, a limit we also imposed on our model. Another explanation for the discrepancy was the GPU on which the computation was performed.
 
