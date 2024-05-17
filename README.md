@@ -95,7 +95,8 @@ Once the setup was complete, the model was trained and saved to Google Drive or 
 <p dir="ltr"><strong>Results with Positional Variable (Accuracy vs Class)</strong></p>
 <div style="display: flex; justify-content: space-between;">
   <img width="508" alt="Screenshot 2024-05-16 at 12 17 27 AM" src="https://github.com/aad235/CS4782-Final-Project-LLMs-and-Arithmetic/assets/92837686/e57a0928-e989-4154-a59f-62ea68e6ba59">
-  <img width="494" alt="Screenshot 2024-05-16 at 12 16 54 AM" src="https://github.com/aad235/CS4782-Final-Project-LLMs-and-Arithmetic/assets/92837686/a948bfe4-70d3-4f68-994f-399198284377">
+![labelResult](https://github.com/aad235/CS4782-Final-Project-LLMs-and-Arithmetic/assets/134877319/497acb03-c840-4a74-9b27-5116f2786253)
+
 </div>
   
 The model with Positional Markers slightly outperform baseline model. 
